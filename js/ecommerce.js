@@ -1,5 +1,5 @@
 const categorias = [
-    { nombre: 'artistas', estampas: ['Harry Styles', 'Selena Quintanilla', 'Justin Bieber', 'Alex Turned'] },
+    { nombre: 'artistas', estampas: ['Harry Styles', 'Selena Quintanilla', 'Justin Bieber', 'Alex Turner'] },
     { nombre: 'peliculas', estampas: ['El logo del Wall Street', 'El viaje de Chihiro', 'The Avengers'] },
     { nombre: 'series', estampas: ['Vis a Vis', 'Sherlock Holmes', 'The Walking Dead', 'Vikings'] },
     { nombre: 'clasicos', estampas: ['Nike', 'Jordan', 'Gatitos', 'Tradicional'] },
@@ -9,7 +9,7 @@ const remeras = [
     { nombre: 'Harry Styles', precio: 2000, talles: ['s', 'm', 'l', 'xl', 'xxl'] },
     { nombre: 'Selena Quintanilla', precio: 1900, talles: [, 'm', 'l', 'xl', 'xxl'] },
     { nombre: 'Justin Bieber', precio: 1900, talles: ['s', 'm', 'l'] },
-    { nombre: 'Alex Turned', precio: 1700, talles: ['s', 'm', 'l'] },
+    { nombre: 'Alex Turner', precio: 1700, talles: ['s', 'm', 'l'] },
     { nombre: 'El logo de Wall Street', precio: 1800, talles: ['s', 'l', 'xl'] },
     { nombre: 'El viaje de Chihiro', precio: 1800, talles: ['s', 'm', 'l', 'xl', 'xxl'] },
     { nombre: 'The Avengers', precio: 2100, talles: ['s', 'm', 'xl', 'xxl'] },
@@ -130,3 +130,15 @@ function consultarStock(diseño) {
     precioRemera = infoRemera.precio;
     return true;
 }
+
+/*
+const estampados= remeras.map((remera)=>{
+    return{
+        nombre:remera.nombre,
+        precio:remera.precio,
+    }
+})
+console.table(estampados);*/
+console.table(nombre)
+const carritoFinal = nombre.filter((remeras) => remeras.diseño.includes("carritoFinal"))
+console.table(carritoFinal)
